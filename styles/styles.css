@@ -72,7 +72,33 @@ height: 43rem; */
 
 /* end of intro section */
 
-/*  */
+/* feature section starts  */
+.img-cards{
+    display: grid;
+    grid-template-columns:  15rem 15rem;
+    grid-template-rows: 15rem 15rem ;
+    align-items: center ;
+    justify-items: center;
+}
+.img-cards img{
+    height: 14rem;
+    width: 14rem;
+}
+.feater{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feat-descrip h3{
+    font-size: 3rem ;
+
+}
+.feat-descrip{
+    width: 50%;
+}
+
 
 
 
@@ -104,8 +130,29 @@ height: 43rem; */
     .banner{
         padding-bottom: 2rem ;
     }
+    /* feat section */
+    .feater{
+        flex-direction: column;
+    }
+        .img-cards{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .feat-descrip{
+            width: 80%;
+        }
+    
         
 
 }
 
-@media screen and(min-width:476) and (max-width:780px) {}
+@media screen and (min-width:477px) and (max-width:780px) {
+    /* feat section */
+  .feater{
+    flex-direction: column;
+  }
+  .feat-descrip{
+    width: 80%;
+}
+
+}
