@@ -1,7 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;}
+
 
     /* shared styles */
     .btn {
@@ -11,16 +12,28 @@ body {
         color: #FFFFFF;
         border: 0px;
         border-radius: 5px;
+        cursor: pointer;
     }
-   .text{font-size: small;
-         color: #727272;
-         font-size: 1rem;
 
+    .text {
+        
+        color: #727272;
+        font-size: .7rem;
+
+    }
+    .card{
+        height: auto;
+        width:auto;
+        background: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: .2rem .2rem .2rem .2rem rgba(173, 168, 168, 0.736);
+        margin-bottom: .6rem;
+        padding: .5rem;
     }
 
     /* end of shared class */
 
-}
+
 
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -73,32 +86,71 @@ height: 43rem; */
 /* end of intro section */
 
 /* feature section starts  */
-.img-cards{
+.img-cards {
     display: grid;
-    grid-template-columns:  15rem 15rem;
-    grid-template-rows: 15rem 15rem ;
-    align-items: center ;
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 15rem 15rem;
+    align-items: center;
     justify-items: center;
 }
-.img-cards img{
+
+.img-cards img {
     height: 14rem;
     width: 14rem;
 }
-.feater{
+
+.feater {
     display: flex;
     align-items: center;
     gap: 2rem;
     justify-content: center;
 }
 
-.feat-descrip h3{
-    font-size: 3rem ;
+.feat-descrip h3 {
+    font-size: 3rem;
 
 }
-.feat-descrip{
+
+.feat-descrip {
     width: 50%;
 }
+/* enjoyment section */
+.enjoyment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 5rem;
 
+}
+.enjoyment-img img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.enjoyment-descrip{
+    width: 30%;
+}
+.enjoyment-img{
+    height: 30rem;
+}
+.exp{
+    height: 9rem;
+    width: 15rem;
+    background:#FF900E ;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    bottom: 5rem;
+    right: 5rem;    
+}
+.exp h1{
+    font-size: 2rem ;
+}
 
 
 
@@ -113,6 +165,7 @@ height: 43rem; */
 
 /* media quary */
 @media screen and (max-width:476px) {
+
     /* nav section */
     nav {
         flex-direction: column;
@@ -122,37 +175,67 @@ height: 43rem; */
     nav ul {
         flex-wrap: wrap;
     }
+
     /* banner section  */
 
-    .intro-descrip h1{
-        font-size:3rem ;
+    .intro-descrip h1 {
+        font-size: 3rem;
     }
-    .banner{
-        padding-bottom: 2rem ;
+
+    .banner {
+        padding-bottom: 2rem;
     }
+
     /* feat section */
-    .feater{
+    .feater {
         flex-direction: column;
     }
-        .img-cards{
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-        .feat-descrip{
-            width: 80%;
-        }
-    
-        
+
+    .img-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .feat-descrip {
+        width: 80%;
+    }
+    /* enjoyment section */
+    .enjoyment{
+        flex-direction: column;
+    }
+.enjoyment-descrip{
+width: 70%;}
+.exp{
+    right: 0;
+    left: 3rem;
+}
+
+
+
 
 }
 
 @media screen and (min-width:477px) and (max-width:780px) {
+    /* header */
+    .intro-descrip h1{
+        font-size: 3.3rem;
+    }
+
     /* feat section */
-  .feater{
-    flex-direction: column;
-  }
-  .feat-descrip{
-    width: 80%;
-}
+    .feater {
+        flex-direction: column;
+    }
+
+    .feat-descrip {
+        width: 80%;
+    }
+    /* enjoyment section */
+    .enjoyment{
+        margin: 2rem;
+        gap: 5rem;
+    }
+    .exp{
+        right: 3rem;
+    }
 
 }
