@@ -1,0 +1,30 @@
+
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+nav{border: 2px solid;
+    width:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+@media screen and (
+    max-width:476px){
+      nav{flex-direction: column;
+    flex-wrap: nowrap;} 
+    nav ul{
+        flex-wrap: wrap;
+    }
+    }
+
+@media screen and(min-width:476) and (max-width:780px){
+
+}
